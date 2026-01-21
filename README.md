@@ -26,7 +26,7 @@ cd  contact_form
 docker-compose up -d --build
 docker-compose exec php bash
 composer install
-cp .env.example .env
+cp .env.example .env (`.env` の `DB_HOST` は `mysql` を指定してください。)
 php artisan key:generate
 php artisan migrate:fresh --seed
 
