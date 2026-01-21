@@ -38,4 +38,4 @@ php artisan migrate:fresh --seed
 
 ## ER 図
 
-![ER図](images/contact.drawio.png)
+![ER図](images/contact_form.drawio.png)
