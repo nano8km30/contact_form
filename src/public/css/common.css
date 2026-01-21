@@ -1,0 +1,21 @@
+.header {
+    width: 100%;
+    border-bottom: 3px solid #e5e5e5;
+    background-color: #fff;
+}
+
+.header__inner {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.header__logo {
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: normal;
+    color: #776a63;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+}

@@ -9,7 +9,8 @@ Laravel を用いて作成したお問い合わせ管理アプリケーション
 
 - PHP 8.x
 - Laravel 8.x
-- MySQL 8.x
+- Laravel Fortify（ユーザー認証）
+- MySQL （MariaDB 11.8 で動作確認）
 - Docker / docker-compose
 - Composer
 
@@ -17,8 +18,8 @@ Laravel を用いて作成したお問い合わせ管理アプリケーション
 
 ## Docker ビルド
 
-git clone https://github.com/（ご自身のGitHubアカウント）/（リポジトリ名）.git
-cd （リポジトリ名）
+git clone https://github.com/nano8km30/contact_form.git
+cd  contact_form
 
 ## Laravel 環境構築
 
@@ -27,8 +28,7 @@ docker-compose exec php bash
 composer install
 cp .env.example .env
 php artisan key:generate
-php artisan migrate
-php artisan db:seed
+php artisan migrate:fresh --seed
 
 ## 開発環境
 
